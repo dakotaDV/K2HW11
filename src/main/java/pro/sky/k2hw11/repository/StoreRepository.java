@@ -1,6 +1,7 @@
 package pro.sky.k2hw11.repository;
 
 import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Repository;
 import pro.sky.k2hw11.model.Item;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public class StoreRepository {
     private int idCounter = 1;
     private final Map<Integer, Item>store = new HashMap<>();
